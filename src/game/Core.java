@@ -3,7 +3,8 @@ package game;
 public class Core {
 
 	public static void main(String[] args) {
-		/* TODO plico is a game
+		/* TODO 
+		 * plinco is a game
 		 * Player gets interview
 		 * Player Gets a number of chips
 		 * Player selects location to drop chip
@@ -13,7 +14,7 @@ public class Core {
 		 */
 		Interview.InitTest();
 		Interview.AskName();
-		Interview.RulesCheck(PlayerName);
+		Interview.RulesCheck(Interview.GetName());
 		
 	}
 

@@ -1,28 +1,32 @@
 package game;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Interview {
-	/* 
-	not completely sure what these do, they are fields
-	still reading documentation 
-	public static Object InitTest;
-	public static Object AskName;
-	 */
-
-	//just a quick print to test functionality
+	
+	static Scanner sc = new Scanner(System.in);
+	
 	public static void InitTest() {
 		System.out.print("Hello ");	
 	}
-	//scanners time B
-	public static String AskName() {
-	System.out.print("What is your name.");
-	Scanner sc = new Scanner(System.in);
-	String PlayerName = sc.next();
-	return PlayerName; 
+	
+	public static void AskName() {
+		System.out.print("What is your name.");
 	}
-	//Using variables across
-	public static void RulesCheck() {
-		System.out.print("Hello " + PlayerName + "welcome to plinco do you know the rules");
+	
+	public static String GetName() {
+		String PlayerName = sc.next();
+		return  PlayerName; 
 	}
+	
+	public static void RulesCheck(String PlayerName) {
+		System.out.print("Hello " + PlayerName + " welcome to plinco do you know the rules");
+		boolean YesNo = sc.nextBoolean();	
+		if (YesNo ==true) { 
+			System.out.print("Good we will now continue");
+		}else{
+			System.out.print("You will pick complete a short quiz that will determine how many chips you get");
+	}
+	}
+	
 }
