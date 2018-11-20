@@ -13,6 +13,7 @@ public class Core {
 		 */
 		Interview.InitTest();
 		Interview.AskName();
+		Interview.RulesCheck(PlayerName);
 		
 	}
 

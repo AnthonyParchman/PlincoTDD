@@ -9,13 +9,20 @@ public class Interview {
 	public static Object InitTest;
 	public static Object AskName;
 	 */
+
 	//just a quick print to test functionality
 	public static void InitTest() {
 		System.out.print("Hello ");	
 	}
-	//scanners time
-	public static void AskName() {
+	//scanners time B
+	public static String AskName() {
 	System.out.print("What is your name.");
-	Scanner sc = new Scanner(System.in); 
+	Scanner sc = new Scanner(System.in);
+	String PlayerName = sc.next();
+	return PlayerName; 
+	}
+	//Using variables across
+	public static void RulesCheck() {
+		System.out.print("Hello " + PlayerName + "welcome to plinco do you know the rules");
 	}
 }
